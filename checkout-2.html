@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="stylesheets/all.css">
+  <title>Sweet</title>
+</head>
+
+<body>
+  <!-- header -->
+  <nav class="navbar navbar-expand-lg navbar-light py-0">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <a class="navbar-brand p-0 m-0" href="index.html">
+        <img class="logo-hidden" src="images/logo-all-dark.svg" style="margin: 30px 0; height: 40px;" alt="">
+        <img class="logo-show" src="images/logotype-sm-dark.svg" style="margin: 33px 0; height: 18px;" alt="">
+      </a>
+      <div class="nav-item logo-show">
+        <a class="nav-link text-s-primary font-weight-bold pl-30 pr-0" href="cart.html">
+          <i class="material-icons">shopping_cart</i>
+        </a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link text-s-primary font-weight-bold px-30" href="index.html">首頁</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-s-primary font-weight-bold px-30" href="product.html">甜點</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-s-primary font-weight-bold px-30" href="login.html">登入</a>
+          </li>
+        </ul>
+      </div>
+      <div class="nav-item logo-hidden">
+        <a class="nav-link text-s-primary font-weight-bold pl-30 pr-0" href="cart.html">
+          <i class="material-icons">shopping_cart</i>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- content 1 -->
+  <div class="container p-lg-10 p-0">
+    <div class="row justify-content-center">
+      <div class="col-lg-6">
+        <form>
+          <div class="bg-s-primary px-40 py-30">
+            <div class="row d-flex justify-content-between text-s-secondary mb-30" style="font-size: 36px;">
+              <div class="col-6">付款</div>
+              <div class="col-6 d-flex align-items-center line-style-check">
+                <i class="material-icons">check_circle</i>
+                <div></div>
+                <i class="material-icons">radio_button_checked</i>
+                <div></div>
+                <i class="material-icons">radio_button_unchecked</i>
+              </div>
+            </div>
+            <div class="d-flex flex-column mb-16">
+              <label class="ck1-label" for="cardNumber">信用卡卡號</label>
+              <div class="d-flex">
+                <input type="text" class="ck-bill-input w-100" id="cardNumber" placeholder="9012-3456-7890-1234">
+                <label class="sub-icon bg-s-secondary m-0" for="cardNumber">
+                  <i class="material-icons text-s-primary">credit_card</i>
+                </label>
+              </div>
+            </div>
+            <div class="row mb-16">
+              <div class="col-6 d-flex flex-column" style="padding-right: 4px;">
+                <label class="ck1-label" for="fristName">持卡人姓名</label>
+                <input type="text" class="ck-bill-input" id="fristName" placeholder="王">
+              </div>
+              <div class="col-6 d-flex flex-column justify-content-end" style="padding-left: 4px;">
+                <label class="ck1-label" for="lastName"></label>
+                <input type="text" class="ck-bill-input" id="lastName" placeholder="小明">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="col-6 d-flex flex-column" style="padding-right: 4px;">
+                <label class="ck1-label" for="select1">有效期限</label>
+                <select class="custom-select ck-bill-input rounded-0" id="select1">
+                  <option value="月" selected>月</option>
+                  <option value="1 月">1 月</option>
+                  <option value="2 月">2 月</option>
+                  <option value="3 月">3 月</option>
+                  <option value="4 月">4 月</option>
+                  <option value="5 月">5 月</option>
+                  <option value="6 月">6 月</option>
+                  <option value="7 月">7 月</option>
+                  <option value="8 月">8 月</option>
+                  <option value="9 月">9 月</option>
+                  <option value="10 月">10 月</option>
+                  <option value="11 月">11 月</option>
+                  <option value="12 月">12 月</option>
+                </select>
+              </div>
+              <div class="col-6 d-flex flex-column justify-content-end" style="padding-left: 4px;">
+                <label class="" for="select2"></label>
+                <select class="custom-select ck-bill-input rounded-0" id="select2">
+                  <option value="年" selected>年</option>
+                  <option value="2018">2018</option>
+                  <option value="2019">2019</option>
+                  <option value="2020">2020</option>
+                </select>
+              </div>
+            </div>
+            <div class="row mt-16">
+              <div class="col-6 d-flex flex-column" style="padding-right: 4px;">
+                <label class="ck1-label" for="address">背面末三碼</label>
+                <input type="text" class="ck-bill-input" id="address" placeholder="123">
+              </div>
+            </div>
+          </div>
+          <!-- <button type="submit" class="btn btn-s-hover h4 rounded-0 m-0 text-s-primary font-weight-bold w-100" style="height: 65px;">下一步</button> -->
+          <a href="checkout-3.html" class="btn btn-s-hover rounded-0 flex-cc" style="height: 65px;">
+            <span class="text-s-primary font-weight-bold h4">下一步</span>
+          </a>
+        </form>
+      </div>
+      <div class="col-lg-4 md-hidden">
+        <form class="d-flex flex-column">
+          <!-- ck1 list -->
+          <div class=" border border-1 border-s-scondary">
+            <div>
+              <div class="ck-bill-title">訂單摘要</div>
+            </div>
+            <div style="padding: 8px 20px;">
+              <div class="ck-bill-item">
+                <span>小計</span>
+                <span>NT$ 2,700</span>
+              </div>
+              <div class="ck-bill-item" style="padding-top: 0px;">
+                <span>運費</span>
+                <span>NT$ 300</span>
+              </div>
+              <div class="ck-bill-item h5 m-0 font-weight-bold">
+                <span>總計</span>
+                <span>NT$ 3,000</span>
+              </div>
+            </div>
+          </div>
+        </form>
+        <form class="d-flex flex-column mt-20">
+          <!-- ck1 list -->
+          <div class=" border border-1 border-s-scondary">
+            <div>
+              <div class="ck-bill-title">購物清單</div>
+            </div>
+            <div style="padding: 8px 0px 8px 20px;">
+              <div class="d-flex align-items-center" style="padding: 8px 0;">
+                <div class="mr-20">
+                  <div class="bg-cover" style="background-image: url(https://bit.ly/2QvsT63); width: 120px; height: 80px;"></div>
+                </div>
+                <div class="text-s-strong">
+                  <div>焦糖馬卡龍（2）</div>
+                  <div class="h5 m-0">NT$ 900</div>
+                </div>
+              </div>
+              <div class="d-flex align-items-center" style="padding: 8px 0;">
+                <div class="mr-20">
+                  <div class="bg-cover" style="background-image: url(https://bit.ly/2zBDAxX); width: 120px; height: 80px;"></div>
+                </div>
+                <div class="text-s-strong">
+                  <div>焦糖馬卡龍（2）</div>
+                  <div class="h5 m-0">NT$ 900</div>
+                </div>
+              </div>
+              <div class="d-flex align-items-center" style="padding: 8px 0;">
+                <div class="mr-20">
+                  <div class="bg-cover" style="background-image: url(https://bit.ly/2zKOP7w); width: 120px; height: 80px;"></div>
+                </div>
+                <div class="text-s-strong">
+                  <div>焦糖馬卡龍（2）</div>
+                  <div class="h5 m-0">NT$ 900</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- ftoor -->
+  <div class="bg-s-primary mt-lg-50">
+    <div class="container">
+      <div class="row d-flex align-items-center py-15">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-4 py-15">
+          <div class="flex-cc">
+            <img src="images/logo-light.svg" style="height: 40px; width: 40px;" alt="">
+            <div class="ml-20 text-s-secondary h4">訂閱你我的甜蜜郵件</div>
+          </div>
+        </div>
+        <div class="col-lg-1"></div>
+        <div class="col-lg-5 py-15 flex-cc">
+          <div class="sub-icon bg-s-secondary">
+            <i class="material-icons text-s-primary">mail</i>
+          </div>
+          <input type="text" class="sub-input bg-s-secondary" aria-label="Amount (to the nearest dollar)">
+          <div class="sub-icon bg-s-hover">
+            <i class="material-icons text-s-primary">arrow_forward</i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-s-secondary">
+    <div class="container py-15">
+      <div class="row py-15">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-5">
+          <div class="container h-100">
+            <div class="row h-100">
+              <div class="col-lg-12">
+                <img src="images/logotype-lg-dark.svg" style="height: 26.6px; margin-bottom: 8.9px;" alt="">
+              </div>
+              <div class="col-lg-12" style="margin-top: 39.5px">
+                <div class="text-s-primary d-flex flex-column justify-content-end h-100">
+                  <div>07-1234-5678</div>
+                  <div>sweetaste@email.com</div>
+                  <div>800 高雄市新興區幸福路 520 號</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5 d-flex justify-content-end">
+          <div class="py-15 md-hidden"><img class="" src="images/sm-今天是個吃甜點的好日子.svg" style="height: 220px;" alt=""></div>
+        </div>
+        <div class="col-lg-1"></div>
+      </div>
+      <div class="row d-flex align-items-center">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-4 py-15 mr-auto">
+          <img class="icon-md" src="images/ic-line@.svg" style="height: 32px; width: 32px;" alt="">
+          <img class="icon-md" src="images/ic-facebook.svg" style="height: 32px; width: 32px;" alt="">
+        </div>
+        <div class="col-lg-1"></div>
+        <div class="col-lg-5 py-15">
+          <div class="text-s-primary text-md-right">© 2018 Sweetaste* All Rights Reserved</div>
+        </div>
+        <div class="col-lg-1"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="javascripts/vendor.js"></script>
+</body>
+
+</html>
